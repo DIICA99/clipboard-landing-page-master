@@ -1,0 +1,76 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  padding: 0 11.25rem;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+//  main
+.main {
+  position: relative;
+}
+
+//  section (all sections)
+.section {
+  position: relative;
+  margin: 0 auto 9.375rem auto;
+}
+
+.__section-title, .__section-subtitle {
+  text-align: center;
+  margin-bottom: 1.125rem;
+}
+
+.--paragraph {
+  text-align: center;
+  color: $grayish-blue;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.ctas--btn-cta {
+  border: none;
+  padding: .8125rem;
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: bold;
+  border-radius: 3.125rem;
+  color: #fff;
+}
+
+.image__on-mobile {
+  width: 100%;
+}
+
+//  footer
+.footer {
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0 1.875rem;
+  }
+
+  .--paragraph {
+    margin-bottom: 3.125rem;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+  .container {
+    padding: 0 1.06rem;
+  }
+}
